@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<list key="CommitDialog.authorValues">
+		<item value="Maru &lt;partnersoul12@gmail.com&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="Maru &lt;partnersoul12@gmail.com&gt;"/>
+	</list>
 	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
 		<item key="MAIN_SASH_FORM_ORIENTATION_VERTICAL" value="true"/>
 		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
@@ -8,13 +14,7 @@
 	</section>
 	<section name="GitCommitMessageComponent">
 		<list key="D:\source\spring\Spring_Practice\.git">
-			<item value="false"/>
-			<item value="Maru &lt;partnersoul12@gmail.com&gt;"/>
-			<item value="초기 커밋 및 환경설정"/>
-			<item value="Maru &lt;partnersoul12@gmail.com&gt;"/>
-			<item value="abe28a9a0f3cdb50809dbef92fd8e52f0a0822c4"/>
-			<item value="0"/>
-			<item value="false"/>
+			<item value="empty"/>
 		</list>
 	</section>
 	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
