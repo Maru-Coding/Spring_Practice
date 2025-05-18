@@ -1,0 +1,7 @@
+package com.myspring.sample;
+
+import static org.junit.Assert.assertNotnull;
+
+public class SampleTests {
+
+}
