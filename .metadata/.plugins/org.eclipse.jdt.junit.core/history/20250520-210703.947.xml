@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TimeMapperTests" project="SpringPractice" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.myspring.persistence.TimeMapperTests" time="0.122">
+    <testcase name="testGetTime2" classname="com.myspring.persistence.TimeMapperTests" time="0.119"/>
+    <testcase name="testGetTime" classname="com.myspring.persistence.TimeMapperTests" time="0.003"/>
+  </testsuite>
+</testrun>
