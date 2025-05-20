@@ -1,7 +1,0 @@
-package com.myspring.mapper;
-
-import org.apache.ibatis.annotations.Select;
-
-public interface TimeMapper {
-
-}
