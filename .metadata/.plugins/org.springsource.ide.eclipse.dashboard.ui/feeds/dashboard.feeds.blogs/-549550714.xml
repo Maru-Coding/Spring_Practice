@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Spring]]></title><description><![CDATA[Level up your Java code and explore what Spring can do for you.]]></description><link>https://spring.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 20 May 2025 09:07:56 GMT</lastBuildDate><item><title><![CDATA[Spring Web Services 4.1.0 available now]]></title><link>https://spring.io/blog/2025/05/20/spring-ws-4-1-0-available-now</link><guid isPermaLink="true">https://spring.io/blog/2025/05/20/spring-ws-4-1-0-available-now</guid><dc:creator><![CDATA[snicoll]]></dc:creator><pubDate>Tue, 20 May 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the team and everyone who has contributed, I&apos;m happy to announce that Spring Web Services &lt;code&gt;4.1.0&lt;/code&gt; has been released and is now available from Maven Central.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Spring]]></title><description><![CDATA[Level up your Java code and explore what Spring can do for you.]]></description><link>https://spring.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 20 May 2025 11:31:59 GMT</lastBuildDate><item><title><![CDATA[Spring for GraphQL 1.4.0 Released]]></title><link>https://spring.io/blog/2025/05/20/spring-for-graphql-1-4-0-released</link><guid isPermaLink="true">https://spring.io/blog/2025/05/20/spring-for-graphql-1-4-0-released</guid><dc:creator><![CDATA[bclozel]]></dc:creator><pubDate>Tue, 20 May 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the Spring for GraphQL team, I am pleased to announce the availability of 1.4.0, the generally available release.&lt;/p&gt;
+&lt;p&gt;In case you missed those, the &lt;a href=&quot;https://spring.io/blog/2025/03/18/spring-for-graphql-1-4-m1-released&quot;&gt;1.4.0-M1 &lt;/a&gt; and &lt;a href=&quot;https://spring.io/blog/2025/04/17/spring-for-graphql-1-4-rc1-released&quot;&gt;1.4.0-RC1&lt;/a&gt; release blog posts described the new features for this generation.
+&lt;a href=&quot;https://github.com/spring-projects/spring-graphql/wiki/Spring-for-GraphQL-1.4&quot;&gt;The Spring for GraphQL 1.4.0 wiki page&lt;/a&gt; should help you to upgrade your application.
+We will keep updating this page with the feedback we get from the community on our issue tracker and on StackOverflow.&lt;/p&gt;
+&lt;h2 id=&quot;graphql-java-24-baseline&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#graphql-java-24-baseline&quot; aria-label=&quot;graphql java 24 baseline permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GraphQL Java 24+ baseline&lt;/h2&gt;
+&lt;p&gt;The GraphQL Java team recently released new major releases for the Java DataLoader and GraphQL Java projects.
+They immediately supersede the 23.x generation so &lt;a href=&quot;https://github.com/spring-projects/spring-graphql/issues/1210&quot;&gt;Spring for GraphQL 1.4 will require GraphQL Java 24+ as a baseline&lt;/a&gt;.
+This last-minute change shouldn&apos;t affect much your application, this mostly addresses missing bits in the previous GraphQL Java and DataLoader major version.&lt;/p&gt;
+&lt;h2 id=&quot;next-step&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#next-step&quot; aria-label=&quot;next step permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Next step&lt;/h2&gt;
+&lt;p&gt;We will start publishing SNAPSHOTs for Spring for GraphQL 2.0 shortly.
+This next generation will be based on Spring Framework 7.0 and targets a November 2025 release with Spring Boot 4.0.
+We are happy to see our community grow significantly over the last few months, thank you!&lt;/p&gt;
+&lt;p&gt;Our &lt;a href=&quot;https://github.com/spring-projects/spring-graphql/milestones&quot;&gt;milestone page&lt;/a&gt; always reflects our current roadmap.
+If you have suggestions or enhancement requests for the next generation, don&apos;t hesitate and reach out on our issue tracker!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://spring.io/projects/spring-graphql/&quot;&gt;Project Page&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-graphql&quot;&gt;GitHub&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-graphql/issues&quot;&gt;Issues&lt;/a&gt; | &lt;a href=&quot;https://docs.spring.io/spring-graphql/reference/&quot;&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Spring Web Services 4.1.0 available now]]></title><link>https://spring.io/blog/2025/05/20/spring-ws-4-1-0-available-now</link><guid isPermaLink="true">https://spring.io/blog/2025/05/20/spring-ws-4-1-0-available-now</guid><dc:creator><![CDATA[snicoll]]></dc:creator><pubDate>Tue, 20 May 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the team and everyone who has contributed, I&apos;m happy to announce that Spring Web Services &lt;code&gt;4.1.0&lt;/code&gt; has been released and is now available from Maven Central.&lt;/p&gt;
 &lt;p&gt;This release adds a number of new features and improvements.
 For full &lt;a href=&quot;https://github.com/spring-projects/spring-ws/wiki/Spring-Web-Services-4.1-Release-Notes#upgrading-from-spring-web-services-40&quot;&gt;upgrade instructions&lt;/a&gt; and &lt;a href=&quot;https://github.com/spring-projects/spring-ws/wiki/Spring-Web-Services-4.1-Release-Notes#new-and-noteworthy&quot;&gt;new and noteworthy&lt;/a&gt; features please see the &lt;a href=&quot;https://github.com/spring-projects/spring-ws/wiki/Spring-Web-Services-4.1-Release-Notes&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;whats-new-in-41&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#whats-new-in-41&quot; aria-label=&quot;whats new in 41 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What&apos;s new in 4.1&lt;/h2&gt;
@@ -14,13 +28,261 @@ For full &lt;a href=&quot;https://github.com/spring-projects/spring-ws/wiki/Spri
 &lt;h2 id=&quot;thank-you&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#thank-you&quot; aria-label=&quot;thank you permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Thank you&lt;/h2&gt;
 &lt;p&gt;We want to take this opportunity to again thank all our users and contributors.&lt;/p&gt;
 &lt;p&gt;If you&apos;re interested in helping out, check out the &lt;a href=&quot;https://github.com/spring-projects/spring-ws/labels/status%3A%20ideal-for-contribution&quot;&gt;&quot;ideal for contribution&quot; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href=&quot;https://stackoverflow.com&quot;&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href=&quot;https://stackoverflow.com/tags/spring-ws&quot;&gt;&lt;code&gt;spring-ws&lt;/code&gt; tag&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://spring.io/projects/spring-ws/&quot;&gt;Project Page&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-ws&quot;&gt;GitHub&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-ws/issues&quot;&gt;Issues&lt;/a&gt; | &lt;a href=&quot;https://docs.spring.io/spring-ws/docs/4.1.0/reference/html/&quot;&gt;Documentation&lt;/a&gt; | &lt;a href=&quot;https://stackoverflow.com/questions/tagged/spring-ws&quot;&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Spring Security 6.3.10 Released]]></title><link>https://spring.io/blog/2025/05/19/spring-security-6-3-10</link><guid isPermaLink="true">https://spring.io/blog/2025/05/19/spring-security-6-3-10</guid><dc:creator><![CDATA[jzheaux]]></dc:creator><pubDate>Mon, 19 May 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce the availability of Spring Security 6.3.10.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://spring.io/projects/spring-ws/&quot;&gt;Project Page&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-ws&quot;&gt;GitHub&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-ws/issues&quot;&gt;Issues&lt;/a&gt; | &lt;a href=&quot;https://docs.spring.io/spring-ws/docs/4.1.0/reference/html/&quot;&gt;Documentation&lt;/a&gt; | &lt;a href=&quot;https://stackoverflow.com/questions/tagged/spring-ws&quot;&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[MCP Authorization in practice with Spring AI and OAuth2]]></title><link>https://spring.io/blog/2025/05/19/spring-ai-mcp-client-oauth2</link><guid isPermaLink="true">https://spring.io/blog/2025/05/19/spring-ai-mcp-client-oauth2</guid><dc:creator><![CDATA[dgarnier]]></dc:creator><pubDate>Mon, 19 May 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Last month, we explored how to &lt;a href=&quot;https://spring.io/blog/2025/04/02/mcp-server-oauth2&quot;&gt;secure Spring AI MCP Servers&lt;/a&gt;[1] with the OAuth2 authorization framework.
+In the conclusion of that article, we mentioned we&apos;d explore using standalone Authorization Servers for MCP Security and deviate from the then-current specification.&lt;/p&gt;
+&lt;p&gt;Since we published the article, the community has been very active in revising the original version of the specification.
+The &lt;a href=&quot;https://modelcontextprotocol.io/specification/draft/basic/authorization&quot;&gt;new draft&lt;/a&gt; is simpler, and the major change does match what we had imagined for security.
+MCP Servers are still OAuth2 Resource Servers, meaning they authorize incoming requests using access tokens passed in a header.
+However, they do not need to be Authorization Servers themselves: access tokens can now be issued by an external Authorization Server.&lt;/p&gt;
+&lt;p&gt;In this blog post, we&apos;ll describe how to implement the newest revision of the specification in MCP Servers, and how to secure your MCP clients.&lt;/p&gt;
+&lt;p&gt;Feel free to take a peek at the &lt;a href=&quot;https://spring.io/blog/2025/04/02/mcp-server-oauth2&quot;&gt;previous blog post&lt;/a&gt; for a refresher on OAuth2 and MCP.&lt;/p&gt;
+&lt;h2 id=&quot;securing-the-mcp-server&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#securing-the-mcp-server&quot; aria-label=&quot;securing the mcp server permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Securing the MCP Server&lt;/h2&gt;
+&lt;p&gt;In this example, we will add OAuth 2 support to a sample MCP Server - the &lt;a href=&quot;https://github.com/spring-projects/spring-ai-examples/tree/main/model-context-protocol/weather/starter-webmvc-server&quot;&gt;&quot;Weather&quot; MCP tool&lt;/a&gt; from our Spring AI examples repository.&lt;/p&gt;
+&lt;p&gt;First, we import the required Boot starter in &lt;code&gt;pom.xml&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-xml&quot;&gt;&amp;#x3C;dependency&gt;
+    &amp;#x3C;groupId&gt;org.springframework.boot&amp;#x3C;/groupId&gt;
+    &amp;#x3C;artifactId&gt;spring-boot-starter-oauth2-resource-server&amp;#x3C;/artifactId&gt;
+&amp;#x3C;/dependency&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then, we configure our MCP Server to be an OAuth2 Resource Server by updating &lt;code&gt;application.properties&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-properties&quot;&gt;# Update the port so it does not clash with our Client application
+server.port=8090
+
+# Turn on OAuth2 Resource Server
+# This assumes we have an Authorization Server running at http://localhost:9000
+spring.security.oauth2.resourceserver.jwt.issuer-uri=http://localhost:9000
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Thanks to Spring Security and Spring Boot support, our MCP Server is now fully secured: every request requires a JWT token in the &lt;code&gt;Authorization&lt;/code&gt; header.&lt;/p&gt;
+&lt;p&gt;If you&apos;d like to learn more about OAuth2 Resource Server support in Spring Security, head over to the &lt;a href=&quot;https://docs.spring.io/spring-security/reference/servlet/oauth2/resource-server/jwt.html&quot;&gt;reference documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;building-an-oauth2-authorization-server&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#building-an-oauth2-authorization-server&quot; aria-label=&quot;building an oauth2 authorization server permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building an OAuth2 Authorization Server&lt;/h2&gt;
+&lt;p&gt;Our MCP Server now expects an Authorization Server to be running at &lt;code&gt;http://localhost:9000&lt;/code&gt;.
+In an enterprise scenario, an authorization server is often already provided, either through cloud services or on-premise deployments of servers such as Keycloak.
+For this demo, you can use the Authorization Server &lt;a href=&quot;https://github.com/Kehrlann/spring-ai-mcp-authorization-demo/tree/main/authorization-server&quot;&gt;we provide with the demo&lt;/a&gt; and run it with &lt;code&gt;./mvnw spring-boot:run&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Alternatively, you can build your own in just a few lines of configuration. First, we need the dependencies:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-xml&quot;&gt;&amp;#x3C;dependency&gt;
+    &amp;#x3C;groupId&gt;org.springframework.boot&amp;#x3C;/groupId&gt;
+    &amp;#x3C;artifactId&gt;spring-boot-starter-oauth2-authorization-server&amp;#x3C;/artifactId&gt;
+&amp;#x3C;/dependency&gt;
+&amp;#x3C;dependency&gt;
+    &amp;#x3C;groupId&gt;org.springframework.boot&amp;#x3C;/groupId&gt;
+    &amp;#x3C;artifactId&gt;spring-boot-starter-web&amp;#x3C;/artifactId&gt;
+&amp;#x3C;/dependency&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And then, some configuration that will be picked up by Spring Boot in &lt;code&gt;application.yml&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-properties&quot;&gt;server:
+  port: 9000
+
+  # Cookies are per-domain, multiple apps running on localhost on different ports share cookies.
+  # This can create conflicts. We ensure the session cookie is different from the cookie that
+  # the client application uses.
+  servlet:
+    session:
+      cookie:
+        name: MCP_AUTHSERVER_SESSION
+
+spring:
+  security:
+    # Provide a default &quot;user&quot;
+    user:
+      name: user
+      password: password
+
+    # Configure the Authorization Server
+    oauth2:
+      authorizationserver:
+        client:
+          oidc-client:
+            registration:
+              client-id: &quot;mcp-client&quot;
+              client-secret: &quot;{noop}mcp-secret&quot;
+              client-authentication-methods:
+                - &quot;client_secret_basic&quot;
+              authorization-grant-types:
+                - &quot;authorization_code&quot;
+                - &quot;client_credentials&quot;
+                - &quot;refresh_token&quot;
+              redirect-uris:
+                # The client application can technically run on any port
+                - &quot;http://127.0.0.1:8080/authorize/oauth2/code/authserver&quot;
+                - &quot;http://localhost:8080/authorize/oauth2/code/authserver&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you&apos;d like to learn more about OAuth2 Authorization Server support in Spring, head over to the &lt;a href=&quot;https://docs.spring.io/spring-authorization-server/reference/getting-started.html&quot;&gt;reference documentation&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;building-an-mcp-client&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#building-an-mcp-client&quot; aria-label=&quot;building an mcp client permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Building an MCP client&lt;/h2&gt;
+&lt;p&gt;The MCP Server and Authorization Server are straightforward to set up, with simple configuration.
+We need to put in a little more work to secure the MCP client.
+To get started building an MCP Client, regardless of authorization, please refer to &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/mcp/mcp-client-boot-starter-docs.html&quot;&gt;the reference documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;?? Currently, Spring AI only supports adding security for the &lt;code&gt;SYNC&lt;/code&gt; MCP clients, using a &lt;code&gt;WebClient&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Ensure your application has the correct dependencies:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-xml&quot;&gt;&amp;#x3C;!-- Use Spring WebMVC --&gt;
+&amp;#x3C;dependency&gt;
+    &amp;#x3C;groupId&gt;org.springframework.boot&amp;#x3C;/groupId&gt;
+    &amp;#x3C;artifactId&gt;spring-boot-starter-web&amp;#x3C;/artifactId&gt;
+&amp;#x3C;/dependency&gt;
+
+&amp;#x3C;!-- Use WebClient-based MCP-client --&gt;
+&amp;#x3C;dependency&gt;
+    &amp;#x3C;groupId&gt;org.springframework.ai&amp;#x3C;/groupId&gt;
+    &amp;#x3C;artifactId&gt;spring-ai-starter-mcp-client-webflux&amp;#x3C;/artifactId&gt;
+&amp;#x3C;/dependency&gt;
+
+&amp;#x3C;!-- Bring in Spring Security --&gt;
+&amp;#x3C;dependency&gt;
+    &amp;#x3C;groupId&gt;org.springframework.boot&amp;#x3C;/groupId&gt;
+    &amp;#x3C;artifactId&gt;spring-boot-starter-oauth2-client&amp;#x3C;/artifactId&gt;
+&amp;#x3C;/dependency&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then update your &lt;code&gt;application.properties&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-properties&quot;&gt;# Configure MCP
+spring.ai.mcp.client.sse.connections.server1.url=http://localhost:8090
+spring.ai.mcp.client.type=SYNC
+
+# Authserver common config
+spring.security.oauth2.client.provider.authserver.issuer-uri=http://localhost:9000
+
+# Security: for getting tokens used when calling MCP tools
+spring.security.oauth2.client.registration.authserver.client-id=mcp-client
+spring.security.oauth2.client.registration.authserver.client-secret=mcp-secret
+spring.security.oauth2.client.registration.authserver.authorization-grant-type=authorization_code
+spring.security.oauth2.client.registration.authserver.provider=authserver
+
+# Security: for getting tokens used when listing tools, initializing, etc.
+spring.security.oauth2.client.registration.authserver-client-credentials.client-id=mcp-client
+spring.security.oauth2.client.registration.authserver-client-credentials.client-secret=mcp-secret
+spring.security.oauth2.client.registration.authserver-client-credentials.authorization-grant-type=client_credentials
+spring.security.oauth2.client.registration.authserver-client-credentials.provider=authserver
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Notice here that we register two OAuth2 clients.
+The first, using the &lt;code&gt;client_credentials&lt;/code&gt; grant, is used to initialize our client application.
+It allows setting up the session with the MCP client, as well as listing available tools, using machine-to-machine communication: no user is involved in that flow.
+The second uses the &lt;code&gt;authorization_code&lt;/code&gt; grant, and allows our app to obtain tokens on behalf of end-users
+That client is used for calling the tools.&lt;/p&gt;
+&lt;p&gt;While it is not explained here, you will need to add the &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/index.html&quot;&gt;LLM model&lt;/a&gt; of your choice to your application to make it complete.&lt;/p&gt;
+&lt;p&gt;The next step is to configure MCP clients for Spring AI, by providing a &lt;code&gt;@Bean&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Bean
+ChatClient chatClient(ChatClient.Builder chatClientBuilder, List&amp;#x3C;McpSyncClient&gt; mcpClients) {
+    return chatClientBuilder.defaultToolCallbacks(new SyncMcpToolCallbackProvider(mcpClients)).build();
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To add OAuth2 to our MCP Client, we configure a Spring Security &lt;code&gt;SecurityFilterChain&lt;/code&gt; to turn on OAuth2, as well as a custom &lt;code&gt;WebClient.Builder&lt;/code&gt; used by the MCP client:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Bean
+SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+    return http.authorizeHttpRequests(auth -&gt; auth.anyRequest().permitAll())
+        .oauth2Client(Customizer.withDefaults())
+        .csrf(CsrfConfigurer::disable)
+        .build();
+}
+
+/**
+ * Overload Boot&apos;s default {@link WebClient.Builder}, so that we can inject an
+ * oauth2-enabled {@link ExchangeFilterFunction} that adds OAuth2 tokens to requests
+ * sent to the MCP server.
+ */
+@Bean
+WebClient.Builder webClientBuilder(McpSyncClientExchangeFilterFunction filterFunction) {
+    return WebClient.builder().apply(filterFunction.configuration());
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To add tokens to MCP Client request, we need a custom &lt;code&gt;ExchangeFilterFunction&lt;/code&gt; that decides which OAuth2 tokens it uses, depending on the context (user interaction or app initialization).
+It can look a bit confusing for Spring Security beginners, but feel free to use it as-is:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;/**
+ * A wrapper around Spring Security&apos;s
+ * {@link ServletOAuth2AuthorizedClientExchangeFilterFunction}, which adds OAuth2
+ * {@code access_token}s to requests sent to the MCP server.
+ * &amp;#x3C;p&gt;
+ * The end goal is to use access_token that represent the end-user&apos;s permissions. Those
+ * tokens are obtained using the {@code authorization_code} OAuth2 flow, but it requires a
+ * user to be present and using their browser.
+ * &amp;#x3C;p&gt;
+ * By default, the MCP tools are initialized on app startup, so some requests to the MCP
+ * server happen, to establish the session (/sse), and to send the {@code initialize} and
+ * e.g. {@code tools/list} requests. For this to work, we need an access_token, but we
+ * cannot get one using the authorization_code flow (no user is present). Instead, we rely
+ * on the OAuth2 {@code client_credentials} flow for machine-to-machine communication.
+ */
+@Component
+public class McpSyncClientExchangeFilterFunction implements ExchangeFilterFunction {
+
+  private final ClientCredentialsOAuth2AuthorizedClientProvider clientCredentialTokenProvider = new ClientCredentialsOAuth2AuthorizedClientProvider();
+
+  private final ServletOAuth2AuthorizedClientExchangeFilterFunction delegate;
+
+  private final ClientRegistrationRepository clientRegistrationRepository;
+
+  // Must match registration id in property
+  // spring.security.oauth2.client.registration.&amp;#x3C;REGISTRATION-ID&gt;.authorization-grant-type=authorization_code
+  private static final String AUTHORIZATION_CODE_CLIENT_REGISTRATION_ID = &quot;authserver&quot;;
+
+  // Must match registration id in property
+  // spring.security.oauth2.client.registration.&amp;#x3C;REGISTRATION-ID&gt;.authorization-grant-type=client_credentials
+  private static final String CLIENT_CREDENTIALS_CLIENT_REGISTRATION_ID = &quot;authserver-client-credentials&quot;;
+
+  public McpSyncClientExchangeFilterFunction(OAuth2AuthorizedClientManager clientManager,
+      ClientRegistrationRepository clientRegistrationRepository) {
+    this.delegate = new ServletOAuth2AuthorizedClientExchangeFilterFunction(clientManager);
+    this.delegate.setDefaultClientRegistrationId(AUTHORIZATION_CODE_CLIENT_REGISTRATION_ID);
+    this.clientRegistrationRepository = clientRegistrationRepository;
+  }
+
+  /**
+   * Add an {@code access_token} to the request sent to the MCP server.
+   * &amp;#x3C;p&gt;
+   * If we are in the context of a ServletRequest, this means a user is currently
+   * involved, and we should add a token on behalf of the user, using the
+   * {@code authorization_code} grant. This typically happens when doing an MCP
+   * {@code tools/call}.
+   * &amp;#x3C;p&gt;
+   * If we are NOT in the context of a ServletRequest, this means we are in the startup
+   * phases of the application, where the MCP client is initialized. We use the
+   * {@code client_credentials} grant in that case, and add a token on behalf of the
+   * application itself.
+   */
+  @Override
+  public Mono&amp;#x3C;ClientResponse&gt; filter(ClientRequest request, ExchangeFunction next) {
+    if (RequestContextHolder.getRequestAttributes() instanceof ServletRequestAttributes) {
+      return this.delegate.filter(request, next);
+    }
+    else {
+      var accessToken = getClientCredentialsAccessToken();
+      var requestWithToken = ClientRequest.from(request)
+        .headers(headers -&gt; headers.setBearerAuth(accessToken))
+        .build();
+      return next.exchange(requestWithToken);
+    }
+  }
+
+  private String getClientCredentialsAccessToken() {
+    var clientRegistration = this.clientRegistrationRepository
+      .findByRegistrationId(CLIENT_CREDENTIALS_CLIENT_REGISTRATION_ID);
+
+    var authRequest = OAuth2AuthorizationContext.withClientRegistration(clientRegistration)
+      .principal(new AnonymousAuthenticationToken(&quot;client-credentials-client&quot;, &quot;client-credentials-client&quot;,
+          AuthorityUtils.createAuthorityList(&quot;ROLE_ANONYMOUS&quot;)))
+      .build();
+    return this.clientCredentialTokenProvider.authorize(authRequest).getAccessToken().getTokenValue();
+  }
+
+  /**
+   * Configure a {@link WebClient} to use this exchange filter function.
+   */
+  public Consumer&amp;#x3C;WebClient.Builder&gt; configuration() {
+    return builder -&gt; builder.defaultRequest(this.delegate.defaultRequest()).filter(this);
+  }
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And with that, we have everything we need! Asking our LLM weather-related questions will trigger a call our Weather MCP tool:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;var chatResponse = chatClient.prompt(&quot;What is the weather in %s right now?&quot;.formatted(query))
+        .call()
+        .content();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you&apos;d like to try it for yourself, we have &lt;a href=&quot;https://github.com/Kehrlann/spring-ai-mcp-authorization-demo/&quot;&gt;a fully packaged demo application&lt;/a&gt; available on GitHub.&lt;/p&gt;
+&lt;h2 id=&quot;whats-next&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#whats-next&quot; aria-label=&quot;whats next permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What&apos;s next?&lt;/h2&gt;
+&lt;p&gt;This is a first step implementing full, end-to-end authorization.
+By using Spring&apos;s powerful extensibility, we can add OAuth2 to our MCP Clients and Servers, but it requires writing some code.&lt;/p&gt;
+&lt;p&gt;The Spring team is hard at work building a simpler integration, with the delightful configuration-driven Boot user experience.&lt;/p&gt;
+&lt;p&gt;We are also working on fine-grained permissions for MCP Servers.
+In more advanced use-cases, not all tools/resources/prompts in an MCP Server will require the same permissions: the &quot;thing-reader&quot; tool will be available to every user, but the &quot;thing-writer&quot; is only available to admins.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;[1]: &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/1.0/api/mcp/mcp-overview.html&quot;&gt;Model Context Protocol&lt;/a&gt;, or MCP for short, is a protocol allow AI models to interact with and access external tools and resources in a structured way. Spring AI provides &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/mcp/mcp-overview.html&quot;&gt;out-of-the box support&lt;/a&gt; for both MCP Servers and MCP Clients.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Spring Security 6.3.10 Released]]></title><link>https://spring.io/blog/2025/05/19/spring-security-6-3-10</link><guid isPermaLink="true">https://spring.io/blog/2025/05/19/spring-security-6-3-10</guid><dc:creator><![CDATA[jzheaux]]></dc:creator><pubDate>Mon, 19 May 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce the availability of Spring Security 6.3.10.&lt;/p&gt;
 &lt;p&gt;Please check &lt;a href=&quot;https://github.com/spring-projects/spring-security/releases/tag/6.3.10&quot;&gt;the changelog&lt;/a&gt; for more details.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://spring.io/projects/spring-security/&quot;&gt;Project Page&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-security&quot;&gt;GitHub&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-security/issues&quot;&gt;Issues&lt;/a&gt; | &lt;a href=&quot;https://docs.spring.io/spring-security/reference/&quot;&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Spring Security 6.4.6 Released]]></title><link>https://spring.io/blog/2025/05/19/spring-security-6-4-6</link><guid isPermaLink="true">https://spring.io/blog/2025/05/19/spring-security-6-4-6</guid><dc:creator><![CDATA[jzheaux]]></dc:creator><pubDate>Mon, 19 May 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce the availability of Spring Security 6.4.6.&lt;/p&gt;
-&lt;p&gt;Please check &lt;a href=&quot;https://github.com/spring-projects/spring-security/releases/tag/6.4.6&quot;&gt;the changelog&lt;/a&gt; for more details.
-Note that this release contains the fix for &lt;a href=&quot;https://spring.io/security/cve-2025-41232&quot;&gt;CVE-2025-41232&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://spring.io/projects/spring-security/&quot;&gt;Project Page&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-security&quot;&gt;GitHub&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-security/issues&quot;&gt;Issues&lt;/a&gt; | &lt;a href=&quot;https://docs.spring.io/spring-security/reference/&quot;&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Spring Security 6.5.0 Is Out!]]></title><link>https://spring.io/blog/2025/05/19/spring-security-6-5-0-is-out</link><guid isPermaLink="true">https://spring.io/blog/2025/05/19/spring-security-6-5-0-is-out</guid><dc:creator><![CDATA[jzheaux]]></dc:creator><pubDate>Mon, 19 May 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce the general availability of the final Spring Security 6 minor release, 6.5.0!&lt;/p&gt;
-&lt;p&gt;To see all the new features, please take a look at &lt;a href=&quot;https://docs.spring.io/spring-security/reference/6.5-SNAPSHOT/whats-new.html%5BWhat&amp;#x27;s&quot;&gt;https://docs.spring.io/spring-security/reference/6.5-SNAPSHOT/whats-new.html[What&apos;s&lt;/a&gt; New in Spring Security 6.5] in the reference.&lt;/p&gt;
-&lt;p&gt;Also, since this is the target release for migrating from 6.x to 7.x, please also begin reviewing &lt;a href=&quot;https://docs.spring.io/spring-security/reference/6.5-SNAPSHOT/migration-7/index.html&quot;&gt;the migration guide&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Please check &lt;a href=&quot;https://github.com/spring-projects/spring-security/releases/tag/6.5.0&quot;&gt;the release changelog&lt;/a&gt; as well as the previous changelogs for &lt;a href=&quot;https://github.com/spring-projects/spring-security/releases/tag/6.5.0&quot;&gt;6.5.0-M1&lt;/a&gt;, &lt;a href=&quot;https://github.com/spring-projects/spring-security/releases/tag/6.5.0-M2&quot;&gt;6.5.0-M2&lt;/a&gt;, &lt;a href=&quot;https://github.com/spring-projects/spring-security/releases/tag/6.5.0-M3&quot;&gt;6.5.0-M3&lt;/a&gt;, and &lt;a href=&quot;https://github.com/spring-projects/spring-security/releases/tag/6.5.0-RC1&quot;&gt;6.5.0-RC1&lt;/a&gt; for more details.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://spring.io/projects/spring-security/&quot;&gt;Project Page&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-security&quot;&gt;GitHub&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-security/issues&quot;&gt;Issues&lt;/a&gt; | &lt;a href=&quot;https://docs.spring.io/spring-security/reference/&quot;&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
