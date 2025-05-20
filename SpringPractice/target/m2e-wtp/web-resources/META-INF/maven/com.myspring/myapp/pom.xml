@@ -75,6 +75,13 @@
 			<version>${org.springframework-version}</version>
 		</dependency>
 		
+		<!-- 20250520 마루설아 추가 (log4j로 DB 로그 보기) -->
+		<dependency>
+			<groupId>org.bgee.log4jdbc-log4j2</groupId>
+			<artifactId>log4jdbc-log4j2-jdbc4</artifactId>
+			<version>1.16</version>
+		</dependency>
+		
 		<!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>

@@ -13,14 +13,8 @@
 	
 	<!-- HikariCP 설정 -->
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
-		<!-- log4jdbc 사용 시 해당 부분 주석 처리
 		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"></property>
-		<property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521:XE"></property> -->
-		
-		<!-- log4jdbc 사용 시 아래 내용으로 수정 -->
-		<property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"></property>
-		<property name="jdbcUrl" value="jdbc:log4jdbc:oracle:thin:@localhost:1521:XE"></property>
-		
+		<property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521:XE"></property>
 		<property name="username" value="maru"></property>
 		<property name="password" value="1234"></property>
 	</bean>
@@ -34,7 +28,4 @@
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource"></property>
 	</bean>
-	
-	<!-- Mybatis Mapper 테스트 -->
-	<mybatis-spring:scan base-package="com.myspring.mapper" />
 </beans>
