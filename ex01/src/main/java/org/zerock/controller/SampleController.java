@@ -1,15 +1,20 @@
 package org.zerock.controller;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.zerock.domain.SampleDTO;
 import org.zerock.domain.SampleDTOList;
+import org.zerock.domain.TodoDTO;
 
 import lombok.extern.log4j.Log4j;
 
@@ -73,6 +78,26 @@ public class SampleController {
 	@GetMapping("ex02Bean")
 	public String ex02Bean(SampleDTOList list) {
 		log.info("list dtos: " + list);
-		return "ex02Array";
+		return "ex02Bean";
+	}
+	
+	// 파라미터 바인딩 및 변환 (날짜)
+	// @InitBinder 또는 @DateTimeFormat 중 하나만 사용 (TodoDTO.java)
+	// 간단한 날짜 정도는 @DateTimeFormat, 복잡한 객체라면 @InitBinder가 유리
+	/*
+	@InitBinder
+	public void initBinder(WebDataBinder binder) {
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		binder.registerCustomEditor(java.util.Date.class,
+				new CustomDateEditor(dateFormat, false));
+	}
+	*/
+	
+	// 위 함수로 날짜 파라미터 바인딩
+	// 주소 호출 방식 : http://localhost:8080/sample/ex03?title=test&dueDate=2018/01/01
+	@GetMapping("ex03")
+	public String ex03(TodoDTO todo) {
+		log.info("todo" + todo);
+		return "ex03";
 	}
 }
