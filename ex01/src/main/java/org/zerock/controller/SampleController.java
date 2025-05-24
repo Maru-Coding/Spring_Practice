@@ -3,12 +3,16 @@ package org.zerock.controller;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.zerock.domain.SampleDTO;
 import org.zerock.domain.SampleDTOList;
 import org.zerock.domain.TodoDTO;
@@ -101,12 +105,42 @@ public class SampleController {
 	
 	/* ----------------------------------------- */
 	// 모델 활용하기
-	
 	// @ModelAttribute : 모델에 파라미터 전달
 	@GetMapping("/ex04")
 	public String ex04(SampleDTO dto, @ModelAttribute("page") int page) {
 		log.info("dto : " + dto);
 		log.info("page : " + page);
 		return "/sample/ex04";
+	}
+	
+	// void 컨트롤러
+	@GetMapping("/ex05")
+	public void ex05() {
+		log.info("/ex05......");
+	}
+	
+	// 객체 반환 컨트롤러 (pom.xml에 jackson-databind 추가)
+	@GetMapping("/ex06")
+	public @ResponseBody SampleDTO ex06() {
+		log.info("/ex06......");
+		
+		SampleDTO dto = new SampleDTO();
+		dto.setAge(20);
+		dto.setName("마루설아");
+		
+		return dto;
+	}
+	
+	// ResponseEntity 반환
+	@GetMapping("/ex07")
+	public ResponseEntity<String> ex07(){
+		log.info("ex07......");
+		
+		String msg = "{\"name\" : \"마루설아\"}";
+		
+		HttpHeaders header = new HttpHeaders();
+		header.add("Content-Type", "application/json;charset=UTF-8");
+		
+		return new ResponseEntity<>(msg, header, HttpStatus.OK);
 	}
 }
