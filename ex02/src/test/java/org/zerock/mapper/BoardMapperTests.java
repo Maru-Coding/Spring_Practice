@@ -19,7 +19,7 @@ public class BoardMapperTests {
 	
 	@Test
 	public void testGetList() {
-		mapper.getList().forEach(board -> log.info(board));
+		// mapper.getList().forEach(board -> log.info(board));
 	}
 	
 	@Test
@@ -32,8 +32,8 @@ public class BoardMapperTests {
 		// 테스트 시 주석 해제
 		// mapper.insert(board);
 		
-		log.info("========== testInsert() ==========");
-		log.info(board);
+		// log.info("========== testInsert() ==========");
+		// log.info(board);
 	}
 	
 	@Test
@@ -46,7 +46,34 @@ public class BoardMapperTests {
 		// 테스트 시 주석 해제
 		// mapper.insertSelectKey(board);
 		
-		log.info("========== testInsertSelectKey() ==========");
-		log.info(board);
+		// log.info("========== testInsertSelectKey() ==========");
+		// log.info(board);
+	}
+	
+	@Test
+	public void testRead() {
+		// 존재하는 게시물 번호로 테스트
+		// BoardVO board = mapper.read(5L);
+		
+		// log.info("========== testRead() ==========");
+		// log.info(board);
+	}
+	
+	@Test
+	public void testDelete() {
+		// log.info("Delete Count: " + mapper.delete(5L));
+	}
+	
+	@Test
+	public void testUpdate() {
+		BoardVO board = new BoardVO();
+		
+		board.setBno(3L);
+		board.setTitle("수정된 제목123123");
+		board.setContent("수정된 내용3344");
+		board.setWriter("설아");
+		
+		int count = mapper.update(board);
+		log.info("UPDATE COUNT : " + count);
 	}
 }
