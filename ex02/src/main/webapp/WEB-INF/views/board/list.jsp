@@ -16,7 +16,9 @@
 	<div class="row">
 		<div class="col-lg-12">
 			<div class="panel panel-default">
-				<div class="panel-heading">Board List Page</div>
+				<div class="panel-heading" style="overflow: hidden; font-size:20px;">Board List Page
+					<button id='regBtn' type="button" class="btn btn-info" style="display: inline-block; float: right;">Register New Board</button>
+				</div>
 				<!-- /.panel-heading -->
 				<div class="panel-body">
 					<table class="table table-striped table-bordered table-hover">
@@ -70,8 +72,8 @@
 
 
 <script type="text/javascript">
-	<!-- Modal 사용을 위한 스크립트 -->
 	$(document).ready(function(){
+		<!-- Modal 사용을 위한 스크립트 -->
 		var result = '<c:out value="${result}"/>';
 		checkModal(result);
 		
@@ -86,6 +88,12 @@
 			
 			$("#myModal").modal("show");
 		}
+		
+		
+		<!-- 게시글 등록 버튼 이벤트 등록 -->
+		$("#regBtn").on("click", function(){
+			self.location = "/board/register";
+		});
 	});
 </script>
 
