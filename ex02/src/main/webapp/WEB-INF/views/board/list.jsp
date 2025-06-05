@@ -75,10 +75,13 @@
 	$(document).ready(function(){
 		<!-- Modal 사용을 위한 스크립트 -->
 		var result = '<c:out value="${result}"/>';
+		
 		checkModal(result);
 		
+		history.replaceState({}, null, null);
+		
 		function checkModal(result){
-			if(result == ''){
+			if(result == '' || history.state){
 				return;
 			}
 			
