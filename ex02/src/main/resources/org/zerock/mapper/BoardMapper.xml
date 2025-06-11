@@ -18,9 +18,9 @@
 				SELECT /*+INDEX_DESC(TBL_BOARD PK_BOARD) */
 					ROWNUM RN, BNO, TITLE, CONTENT, WRITER, REGDATE, UPDATEDATE
 				FROM TBL_BOARD
-				WHERE ROWNUM <= 20
+				WHERE ROWNUM <= #{pageNum} * #{amount}
 			)
-		WHERE RN > 10
+		WHERE RN > (#{pageNum} - 1) * #{amount}
 		]]>
 	</select>
 	
