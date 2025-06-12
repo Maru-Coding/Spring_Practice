@@ -19,4 +19,6 @@ public interface BoardService {
 	
 	// 페이징 처리를 위한 추가
 	public List<BoardVO> getList(Criteria cri);
+	
+	public int getTotal(Criteria cri);
 }

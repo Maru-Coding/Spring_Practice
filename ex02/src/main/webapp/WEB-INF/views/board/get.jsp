@@ -45,6 +45,8 @@
 					
 					<form id='operForm' action="/board/modify" method="get">
 						<input type='hidden' id='bno' name='bno' value='<c:out value="${board.bno}"/>'>
+						<input type='hidden' id='pageNum' name='pageNum' value='<c:out value="${cri.pageNum}"/>'>
+						<input type='hidden' id='amount' name='amount' value='<c:out value="${cri.amount}"/>'>
 					</form>
 				</div>
 				<!-- end panel-body -->
@@ -56,16 +58,16 @@
 </div>
 
 <script type="text/javascript">
-	$(document).ready(funtion(){
+	$(document).ready(function(){
 		var operForm = $("#operForm");
 		
-		$("button[date-oper='modify']").on("click", function(e){
+		$("button[data-oper='modify']").on("click", function(e){
 			operForm.attr("action", "/board/modify").submit();
 		});
 		
 		$("button[data-oper='list']").on("click", function(e){
 			operForm.find("#bno").remove();
-			operForm.attr("action", "/board/list")
+			operForm.attr("action", "/board/list");
 			operForm.submit();
 		});
 	});
