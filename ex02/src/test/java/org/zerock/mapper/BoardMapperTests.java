@@ -102,5 +102,9 @@ public class BoardMapperTests {
 		
 		List<BoardVO> list = mapper.getListWithPaging(cri);
 		list.forEach(board -> log.info(board));
+		
+		
+		int count = mapper.getTotalCount(cri);
+		log.info("검색 게시글 수 : " + count);
 	}
 }

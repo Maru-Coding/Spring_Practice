@@ -10,22 +10,8 @@
 		]]>
 	</select>
 	
-	<select id="getTotalCount" resultType="int">
-		SELECT COUNT(*) FROM TBL_BOARD WHERE BNO > 0
-	</select>
-	
-	<select id="getListWithPaging" resultType="org.zerock.domain.BoardVO">
-		<![CDATA[
-		SELECT BNO, TITLE, CONTENT, WRITER, REGDATE, UPDATEDATE
-		FROM
-			(
-				SELECT /*+INDEX_DESC(TBL_BOARD PK_BOARD) */
-					ROWNUM RN, BNO, TITLE, CONTENT, WRITER, REGDATE, UPDATEDATE
-				FROM TBL_BOARD
-				WHERE
-		]]> 
-		
-		<!-- 검색 기능 추가를 위한 쿼리 재구성 -->
+	<!-- 검색 기능 구현을 위한 쿼리 작성 -->
+	<sql id="criteria">
 		<trim prefix="(" suffix=") AND " prefixOverrides="OR">
 			<foreach item='type' collection="typeArr">
 				<trim prefix="OR">
@@ -45,12 +31,36 @@
 				</trim>
 			</foreach>
 		</trim>
+	</sql>
+		
+	<select id="getListWithPaging" resultType="org.zerock.domain.BoardVO">
+		<![CDATA[
+		SELECT BNO, TITLE, CONTENT, WRITER, REGDATE, UPDATEDATE
+		FROM
+			(
+				SELECT /*+INDEX_DESC(TBL_BOARD PK_BOARD) */
+					ROWNUM RN, BNO, TITLE, CONTENT, WRITER, REGDATE, UPDATEDATE
+				FROM TBL_BOARD
+				WHERE
+		]]> 
+		
+		<!-- 위에서 작성한 criteria SQL 사용하기 -->
+		<include refid="criteria"></include>
 		
 		<![CDATA[
 				ROWNUM <= #{pageNum} * #{amount}
 			)
 			WHERE RN > (#{pageNum} - 1) * #{amount}
 		]]>
+	</select>
+	
+	<select id="getTotalCount" resultType="int">
+		SELECT COUNT(*) FROM TBL_BOARD WHERE 
+		
+		<!-- 위에서 작성한 criteria SQL 사용하기 -->
+		<include refid="criteria"></include>
+		
+		BNO > 0
 	</select>
 	
 	<select id="read" resultType="org.zerock.domain.BoardVO">
