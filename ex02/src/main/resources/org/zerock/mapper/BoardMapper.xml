@@ -22,9 +22,34 @@
 				SELECT /*+INDEX_DESC(TBL_BOARD PK_BOARD) */
 					ROWNUM RN, BNO, TITLE, CONTENT, WRITER, REGDATE, UPDATEDATE
 				FROM TBL_BOARD
-				WHERE ROWNUM <= #{pageNum} * #{amount}
+				WHERE
+		]]> 
+		
+		<!-- 검색 기능 추가를 위한 쿼리 재구성 -->
+		<trim prefix="(" suffix=") AND " prefixOverrides="OR">
+			<foreach item='type' collection="typeArr">
+				<trim prefix="OR">
+					<choose>
+						<when test="type == 'T'.toString()">
+							title like '%'||#{keyword}||'%'
+						</when>
+						
+						<when test="type == 'C'.toString()">
+							content like '%'||#{keyword}||'%'
+						</when>
+						
+						<when test="type == 'W'.toString()">
+							writer like '%'||#{keyword}||'%'
+						</when>
+					</choose>
+				</trim>
+			</foreach>
+		</trim>
+		
+		<![CDATA[
+				ROWNUM <= #{pageNum} * #{amount}
 			)
-		WHERE RN > (#{pageNum} - 1) * #{amount}
+			WHERE RN > (#{pageNum} - 1) * #{amount}
 		]]>
 	</select>
 	

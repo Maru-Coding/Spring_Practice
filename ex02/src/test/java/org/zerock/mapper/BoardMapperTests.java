@@ -20,9 +20,10 @@ public class BoardMapperTests {
 	@Setter(onMethod_ = @Autowired)
 	private BoardMapper mapper;
 	
+	/*
 	@Test
 	public void testGetList() {
-		// mapper.getList().forEach(board -> log.info(board));
+		mapper.getList().forEach(board -> log.info(board));
 	}
 	
 	@Test
@@ -32,11 +33,11 @@ public class BoardMapperTests {
 		board.setContent("새로 작성하는 내용");
 		board.setWriter("newbie");
 		
-		// 테스트 시 주석 해제
-		// mapper.insert(board);
+		//테스트 시 주석 해제
+		mapper.insert(board);
 		
-		// log.info("========== testInsert() ==========");
-		// log.info(board);
+		log.info("========== testInsert() ==========");
+		log.info(board);
 	}
 	
 	@Test
@@ -47,24 +48,24 @@ public class BoardMapperTests {
 		board.setWriter("newbie2");
 		
 		// 테스트 시 주석 해제
-		// mapper.insertSelectKey(board);
+		mapper.insertSelectKey(board);
 		
-		// log.info("========== testInsertSelectKey() ==========");
-		// log.info(board);
+		log.info("========== testInsertSelectKey() ==========");
+		log.info(board);
 	}
 	
 	@Test
 	public void testRead() {
 		// 존재하는 게시물 번호로 테스트
-		// BoardVO board = mapper.read(5L);
+		BoardVO board = mapper.read(5L);
 		
-		// log.info("========== testRead() ==========");
-		// log.info(board);
+		log.info("========== testRead() ==========");
+		log.info(board);
 	}
 	
 	@Test
 	public void testDelete() {
-		// log.info("Delete Count: " + mapper.delete(5L));
+		log.info("Delete Count: " + mapper.delete(5L));
 	}
 	
 	@Test
@@ -89,6 +90,17 @@ public class BoardMapperTests {
 		
 		List<BoardVO> list = mapper.getListWithPaging(cri);
 		
+		list.forEach(board -> log.info(board));
+	}
+	*/
+	
+	@Test
+	public void testSearch() {
+		Criteria cri = new Criteria();
+		cri.setKeyword("새로");
+		cri.setType("TC");
+		
+		List<BoardVO> list = mapper.getListWithPaging(cri);
 		list.forEach(board -> log.info(board));
 	}
 }
