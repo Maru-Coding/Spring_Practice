@@ -89,6 +89,7 @@ public class SampleController {
 	}
 	
 	// @RequestBody : 전달된 요청의 내용을 파라미터로 사용
+	// SampleControllerTests와 연계하여 JUnit 테스트 / Talend API Tests 이용하여 테스트 가능
 	@PostMapping("/ticket")
 	public Ticket convert(@RequestBody Ticket ticket) {
 		log.info("convert...... ticket - " + ticket);
