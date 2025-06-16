@@ -148,14 +148,6 @@
 			<version>1.18.0</version>
 			<scope>provided</scope>
 		</dependency>
-		
-		<!-- 스프링 저장 후 빌드 시 서버 재시작하지 않아도 동기화 -->
-		<dependency>
-		    <groupId>org.springframework.boot</groupId>
-		    <artifactId>spring-boot-devtools</artifactId>
-		    <version>3.2.4</version>
-		    <scope>runtime</scope>
-		</dependency>
 	</dependencies>
     <build>
         <plugins>
