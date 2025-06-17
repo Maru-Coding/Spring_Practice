@@ -40,6 +40,16 @@
 						<input class="form-control" name='writer' value='<c:out value="${board.writer}"/>' readonly="readonly">
 					</div>
 					
+					<div class="form-group">
+						<label>Reg Date</label>
+						<input class="form-control" name='regDate' value='<fmt:formatDate pattern = "yyyy/MM/dd HH:mm:ss" value="${board.regdate}"/>' readonly="readonly">
+					</div>
+					
+					<div class="form-group">
+						<label>Update Date</label>
+						<input class="form-control" name='updateDate' value='<fmt:formatDate pattern = "yyyy/MM/dd HH:mm:ss" value="${board.updateDate}"/>' readonly="readonly">
+					</div>
+					
 					<button data-oper='modify' class="btn btn-default" onclick="location.href='/board/modify?bno=<c:out value="${board.bno}"/>'">Modify</button>
 					<button data-oper='list' class="btn btn-info" onclick="location.href='/board/list'">List</button>
 					
