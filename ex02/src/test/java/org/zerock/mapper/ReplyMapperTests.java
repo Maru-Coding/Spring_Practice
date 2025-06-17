@@ -40,7 +40,6 @@ public class ReplyMapperTests {
 			mapper.insert(vo);
 		});
 	}
-	*/
 	
 	@Test
 	public void testRead() {
@@ -49,5 +48,12 @@ public class ReplyMapperTests {
 		ReplyVO vo = mapper.read(targetRno);
 		
 		log.info(vo);
+	}
+	*/
+	
+	@Test
+	public void testDelete() {
+		Long targetRno = 1L;
+		mapper.delete(targetRno);
 	}
 }

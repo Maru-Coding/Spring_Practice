@@ -11,4 +11,8 @@
 	<select id="read" resultType="org.zerock.domain.ReplyVO">
 		SELECT * FROM TBL_REPLY WHERE RNO = #{rno}
 	</select>
+	
+	<delete id="delete">
+		DELETE FROM TBL_REPLY WHERE RNO = #{rno}
+	</delete>
 </mapper>
