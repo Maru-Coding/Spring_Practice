@@ -19,4 +19,11 @@
 	<update id="update">
 		UPDATE TBL_REPLY SET REPLY = #{reply}, UPDATEDATE = SYSDATE WHERE RNO = #{rno}
 	</update>
+	
+	<select id="getListWithPaging" resultType="org.zerock.domain.ReplyVO">
+		SELECT RNO, BNO, REPLY, REPLYER, REPLYDATE, UPDATEDATE
+		FROM TBL_REPLY
+		WHERE BNO = #{bno}
+		ORDER BY RNO ASC
+	</select>
 </mapper>
