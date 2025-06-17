@@ -49,11 +49,24 @@ public class ReplyMapperTests {
 		
 		log.info(vo);
 	}
-	*/
 	
 	@Test
 	public void testDelete() {
 		Long targetRno = 1L;
 		mapper.delete(targetRno);
+	}
+	*/
+	
+	@Test
+	public void testUpdate() {
+		Long targetRno = 9L;
+		
+		ReplyVO vo = mapper.read(targetRno);
+		
+		vo.setReply("댓글 수정!");
+		
+		int count = mapper.update(vo);
+		
+		log.info("UPDATE COUNT : " + count);
 	}
 }

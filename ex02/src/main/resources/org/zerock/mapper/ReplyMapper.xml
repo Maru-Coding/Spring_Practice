@@ -15,4 +15,8 @@
 	<delete id="delete">
 		DELETE FROM TBL_REPLY WHERE RNO = #{rno}
 	</delete>
+	
+	<update id="update">
+		UPDATE TBL_REPLY SET REPLY = #{reply}, UPDATEDATE = SYSDATE WHERE RNO = #{rno}
+	</update>
 </mapper>
