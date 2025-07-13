@@ -4,7 +4,7 @@
 
 <%@include file="../includes/header.jsp"%>
 
-<div class="container">
+<div class="container">+-
 	<div class="row">
 		<div class="col-lg-12">
 			<h1 class="page-header">Board Read</h1>
@@ -68,6 +68,8 @@
 	</div>
 	<!-- /.row -->
 </div>
+
+<script type="text/javascript" src="/resources/js/reply.js"></script>
 
 <script type="text/javascript">
 	$(document).ready(function(){
