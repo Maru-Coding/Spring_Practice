@@ -69,7 +69,26 @@
 	<!-- /.row -->
 </div>
 
+<!-- 댓글 작성 구현 스크립트 -->
 <script type="text/javascript" src="/resources/js/reply.js"></script>
+
+<!-- 댓글 작성 구현 스크립트 -->
+<script>
+	console.log("=================");
+	console.log("JS TEST");
+	
+	var bnoValue = '<c:out value="${board.bno}"/>';
+	
+	//for replyService add test
+	replyService.add(
+		{reply:"JS Test", replyer:"tester", bno:bnoValue}
+		,
+		function(result){
+			alert("RESULT : " + result);
+		}
+	);
+</script>
+
 
 <script type="text/javascript">
 	$(document).ready(function(){
