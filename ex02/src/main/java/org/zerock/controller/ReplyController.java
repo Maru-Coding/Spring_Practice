@@ -18,6 +18,7 @@ import org.zerock.domain.ReplyVO;
 import org.zerock.service.ReplyService;
 
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.extern.log4j.Log4j;
 
 @RequestMapping("/replies")

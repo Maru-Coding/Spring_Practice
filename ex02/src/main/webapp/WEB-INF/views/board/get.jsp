@@ -4,7 +4,7 @@
 
 <%@include file="../includes/header.jsp"%>
 
-<div class="container">+-
+<div class="container">
 	<div class="row">
 		<div class="col-lg-12">
 			<h1 class="page-header">Board Read</h1>
@@ -69,17 +69,25 @@
 	<!-- /.row -->
 </div>
 
-<!-- 댓글 작성 구현 스크립트 -->
+<!-- 댓글 관련 스크립트 불러오기 -->
 <script type="text/javascript" src="/resources/js/reply.js"></script>
 
-<!-- 댓글 작성 구현 스크립트 -->
+<!-- 댓글 관련 스크립트 구현 -->
 <script>
 	console.log("=================");
 	console.log("JS TEST");
 	
 	var bnoValue = '<c:out value="${board.bno}"/>';
 	
-	//for replyService add test
+	// 댓글 목록 조회 테스트
+	replyService.getList({bno:bnoValue, page:1}, function(list){
+		for(var i = 0, len = list.length||0; i < len; i++){
+			console.log(list[i]);
+		}
+	});
+	
+	// 댓글 작성 테스트
+	/* 
 	replyService.add(
 		{reply:"JS Test", replyer:"tester", bno:bnoValue}
 		,
@@ -87,6 +95,7 @@
 			alert("RESULT : " + result);
 		}
 	);
+	*/
 </script>
 
 
