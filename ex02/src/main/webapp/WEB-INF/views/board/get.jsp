@@ -88,6 +88,11 @@
 	});
 	*/
 	
+	// 댓글 조회 테스트 (1건))
+	replyService.get(22, function(data){
+		console.log(data);
+	});
+	
 	// 댓글 작성 테스트
 	/* 
 	replyService.add(
@@ -113,6 +118,7 @@
 	*/
 	
 	// 댓글 수정 테스트
+	/*
 	replyService.update({
 		rno : 22,
 		bno : bnoValue,
@@ -120,6 +126,7 @@
 	}, function(result){
 		alert("수정 완료!");
 	});
+	*/
 </script>
 
 

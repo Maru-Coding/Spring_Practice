@@ -41,6 +41,19 @@ var replyService = (function(){
 			});
 	}
 	
+	// 댓글 조회 (1건)
+	function get(rno, callback, error){
+		$.get("/replies/" + rno + ".json", function(result){
+			if (callback) {
+				callback(result);
+			}
+		}).fail(function(xhr, status, err) {
+			if (error) {
+				error();
+			}
+		});
+	}
+	
 	// 댓글 삭제
 	function remove(rno, callback, error){
 		$.ajax({
@@ -86,6 +99,7 @@ var replyService = (function(){
 		add : add,
 		getList : getList,
 		remove : remove,
-		update : update
+		update : update,
+		get : get
 	};
 })();
