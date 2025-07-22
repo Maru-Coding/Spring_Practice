@@ -100,6 +100,7 @@
 	*/
 	
 	// 댓글 삭제 테스트
+	/*
 	replyService.remove(21, function(count){
 		console.log(count);
 		
@@ -108,6 +109,16 @@
 		}
 	}, function (err){
 		alert('ERROR...');
+	});
+	*/
+	
+	// 댓글 수정 테스트
+	replyService.update({
+		rno : 22,
+		bno : bnoValue,
+		reply : "Modified Reply......"
+	}, function(result){
+		alert("수정 완료!");
 	});
 </script>
 
