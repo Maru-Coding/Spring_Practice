@@ -80,11 +80,13 @@
 	var bnoValue = '<c:out value="${board.bno}"/>';
 	
 	// 댓글 목록 조회 테스트
+	/*
 	replyService.getList({bno:bnoValue, page:1}, function(list){
 		for(var i = 0, len = list.length||0; i < len; i++){
 			console.log(list[i]);
 		}
 	});
+	*/
 	
 	// 댓글 작성 테스트
 	/* 
@@ -96,6 +98,17 @@
 		}
 	);
 	*/
+	
+	// 댓글 삭제 테스트
+	replyService.remove(21, function(count){
+		console.log(count);
+		
+		if (count === "success"){
+			alert("REMOVED");
+		}
+	}, function (err){
+		alert('ERROR...');
+	});
 </script>
 
 
