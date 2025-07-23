@@ -13,6 +13,7 @@
 	</div>
 	<!-- /.row -->
 
+	<!-- 게시글 영역 -->
 	<div class="row">
 		<div class="col-lg-12">
 			<div class="panel panel-default">
@@ -67,6 +68,38 @@
 		</div>
 	</div>
 	<!-- /.row -->
+	
+	<!-- 댓글 영역 -->
+	<div class='row'>
+		<div class="col-lg-12">
+			<!-- /.panel -->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<i class="fa fa-comments fa-fw"></i> Reply
+				</div>
+				
+				<!-- /.panel-heading -->
+				<div class="panel-body">
+					<ul class="chat" style="list-style: none; padding-left: 0; margin: 0;">
+						<!-- start reply -->
+						<li class="left clearfix" data-rno='12'>
+							<div>
+								<div class="header">
+									<strong class="primary-font">user00</strong>
+									<small class="pull-right text-muted">2025-07-23 17:06:00</small>
+								</div>
+								<p>GOOD JOB!</p>
+							</div>
+						</li>
+						<!-- end reply -->
+					</ul>
+					<!-- ./ end ul -->
+				</div>
+				<!-- /.panel .chat-panel -->
+			</div>
+		</div>
+		<!-- ./ end row -->
+	</div>
 </div>
 
 <!-- 댓글 관련 스크립트 불러오기 -->
