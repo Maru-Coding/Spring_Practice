@@ -97,7 +97,7 @@ var replyService = (function(){
 	// 시간 처리 (JSON 데이터의 숫자형태를 시간형태로 변환)
 	function displayTime(timeValue){
 		var today = new Date();
-		var gap = today.getTIme() - timeValue;
+		var gap = today.getTime() - timeValue;
 		
 		var dateObj = new Date(timeValue);
 		var str = "";
