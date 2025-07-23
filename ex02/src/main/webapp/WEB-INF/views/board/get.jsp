@@ -107,10 +107,40 @@
 
 <!-- 댓글 관련 스크립트 구현 -->
 <script>
+	$(document).ready(function(){
+		var bnoValue = '<c:out value="${board.bno}"/>';
+		var replyUL = $(".chat");
+		
+		showList(1);
+		
+		function showList(page){
+			replyService.getList({bno:bnoValue,page: page || 1}, function(){
+				var str = "";
+				
+				if(list == null || list.length == 0){
+					replyUL.html("");
+					
+					return;
+				}
+				
+				for (var i = 0, len = list.length || 0; i < len; i++){
+					str += "<li class='left clearfix' data-rno='"+list[i].rno"'>";
+					str += "  <div><div class='header'><strong class='primary-font'>"+list[i].replyer+"</strong>";
+					str += "    <small class='pull-right text-muted'>"+replyService.displayTime(list[i].replyDate)+"</small></div>";
+					str += "    <p>"+list[i].reply+"</p></div></li>";
+				}
+				
+				replyUL.html(str);
+			}); // end function
+		} // end showList
+	});
+
+	/* 댓글 Ajax 테스트 (하단)
 	console.log("=================");
 	console.log("JS TEST");
 	
 	var bnoValue = '<c:out value="${board.bno}"/>';
+	*/
 	
 	// 댓글 목록 조회 테스트
 	/*
@@ -122,9 +152,11 @@
 	*/
 	
 	// 댓글 조회 테스트 (1건))
+	/*
 	replyService.get(22, function(data){
 		console.log(data);
 	});
+	*/
 	
 	// 댓글 작성 테스트
 	/* 
@@ -162,7 +194,7 @@
 	*/
 </script>
 
-
+<!-- 댓글 상세조회에서 수정버튼과 목록 돌아가기 기능 -->
 <script type="text/javascript">
 	$(document).ready(function(){
 		var operForm = $("#operForm");
