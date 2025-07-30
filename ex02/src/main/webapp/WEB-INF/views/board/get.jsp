@@ -83,15 +83,9 @@
 				<div class="panel-body">
 					<ul class="chat" style="list-style: none; padding-left: 0; margin: 0;">
 						<!-- start reply -->
-						<li class="left clearfix" data-rno='12'>
-							<div>
-								<div class="header">
-									<strong class="primary-font">user00</strong>
-									<small class="pull-right text-muted">2025-07-23 17:06:00</small>
-								</div>
-								<p>GOOD JOB!</p>
-							</div>
-						</li>
+
+							<!-- 댓글을 불러오면 스크립트에 의해 이곳에 쓰여진다! -->
+						
 						<!-- end reply -->
 					</ul>
 					<!-- ./ end ul -->
@@ -182,6 +176,7 @@
 		var modalRemoveBtn = $("#modalRemoveBtn");
 		var modalRegisterBtn = $("#modalRegisterBtn");
 		
+		<!-- 댓글 모달 이벤트 -->
 		$("#addReplyBtn").on("click", function(e){
 			modal.find("input").val("");
 			modalInputReplyDate.closest("div").hide();
@@ -191,6 +186,26 @@
 			
 			$(".modal").modal("show");
 		});
+		
+		
+		<!-- 댓글 등록 버튼 이벤트 -->
+		modalRegisterBtn.on("click", function(e){
+			var reply = {
+					reply : modalInputReply.val(),
+					replyer : modalInputReplyer.val(),
+					bno : bnoValue
+			};
+			
+			replyService.add(reply, function(result){
+				alert("댓글이 등록되었습니다.");
+				
+				modal.find("input").val("");
+				modal.modal("hide");
+				
+				showList(1);
+			});
+		});
+		
 	});
 
 	/* 댓글 Ajax 테스트 (하단)
