@@ -84,6 +84,7 @@ public class ReplyController {
 				new ResponseEntity<>("success", HttpStatus.OK) : new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 	
+	// 댓글 수정
 	@RequestMapping(method = {RequestMethod.PUT, RequestMethod.PATCH },
 			value = "/{rno}",
 			consumes = "application/json",

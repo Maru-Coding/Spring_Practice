@@ -17,7 +17,7 @@
 	</delete>
 	
 	<update id="update">
-		UPDATE TBL_REPLY SET REPLY = #{reply}, UPDATEDATE = SYSDATE WHERE RNO = #{rno}
+		UPDATE TBL_REPLY SET REPLY = #{reply}, REPLYER = #{replyer}, UPDATEDATE = SYSDATE WHERE RNO = #{rno}
 	</update>
 	
 	<select id="getListWithPaging" resultType="org.zerock.domain.ReplyVO">

@@ -224,6 +224,28 @@
 			})
 		});
 		
+		<!-- 댓글 수정 버튼 이벤트 -->
+		modalModBtn.on("click", function(e){
+			var reply = {rno: modal.data("rno"), reply: modalInputReply.val(), replyer: modalInputReplyer.val()};
+			
+			replyService.update(reply, function(result){
+				alert(result);
+				modal.modal("hide");
+				showList(1);
+			});
+		});
+		
+		<!-- 댓글 삭제 버튼 이벤트 -->
+		modalRemoveBtn.on("click", function(e){
+			var rno = modal.data("rno");
+			
+			replyService.remove(rno, function(result){
+				alert(result);
+				modal.modal("hide");
+				showList(1);
+			});
+		});
+		
 		/* 댓글 Ajax 테스트 (하단)
 		console.log("=================");
 		console.log("JS TEST");
