@@ -206,68 +206,85 @@
 			});
 		});
 		
-	});
-
-	/* 댓글 Ajax 테스트 (하단)
-	console.log("=================");
-	console.log("JS TEST");
-	
-	var bnoValue = '<c:out value="${board.bno}"/>';
-	*/
-	
-	// 댓글 목록 조회 테스트
-	/*
-	replyService.getList({bno:bnoValue, page:1}, function(list){
-		for(var i = 0, len = list.length||0; i < len; i++){
-			console.log(list[i]);
-		}
-	});
-	*/
-	
-	// 댓글 조회 테스트 (1건))
-	/*
-	replyService.get(22, function(data){
-		console.log(data);
-	});
-	*/
-	
-	// 댓글 작성 테스트
-	/* 
-	replyService.add(
-		{reply:"JS Test", replyer:"tester", bno:bnoValue}
-		,
-		function(result){
-			alert("RESULT : " + result);
-		}
-	);
-	*/
-	
-	// 댓글 삭제 테스트
-	/*
-	replyService.remove(21, function(count){
-		console.log(count);
+		<!-- 댓글 클릭 이벤트 -->
+		$(".chat").on("click", "li", function(e){ // chat은 ul이지만 실제로는 li에 위임해주는 이벤트
+			var rno = $(this).data("rno");
+			
+			replyService.get(rno, function(reply){
+				modalInputReply.val(reply.reply);
+				modalInputReplyer.val(reply.replyer);
+				modalInputReplyDate.val(replyService.displayTime(reply.replyDate)).attr("readonly", "readonly");
+				modal.data("rno", reply.rno);
+				
+				modal.find("button[id != 'modalCloseBtn']").hide();
+				modalModBtn.show();
+				modalRemoveBtn.show();
+				
+				$(".modal").modal("show");
+			})
+		});
 		
-		if (count === "success"){
-			alert("REMOVED");
-		}
-	}, function (err){
-		alert('ERROR...');
+		/* 댓글 Ajax 테스트 (하단)
+		console.log("=================");
+		console.log("JS TEST");
+		
+		var bnoValue = '<c:out value="${board.bno}"/>';
+		*/
+		
+		// 댓글 목록 조회 테스트
+		/*
+		replyService.getList({bno:bnoValue, page:1}, function(list){
+			for(var i = 0, len = list.length||0; i < len; i++){
+				console.log(list[i]);
+			}
+		});
+		*/
+		
+		// 댓글 조회 테스트 (1건))
+		/*
+		replyService.get(22, function(data){
+			console.log(data);
+		});
+		*/
+		
+		// 댓글 작성 테스트
+		/* 
+		replyService.add(
+			{reply:"JS Test", replyer:"tester", bno:bnoValue}
+			,
+			function(result){
+				alert("RESULT : " + result);
+			}
+		);
+		*/
+		
+		// 댓글 삭제 테스트
+		/*
+		replyService.remove(21, function(count){
+			console.log(count);
+			
+			if (count === "success"){
+				alert("REMOVED");
+			}
+		}, function (err){
+			alert('ERROR...');
+		});
+		*/
+		
+		// 댓글 수정 테스트
+		/*
+		replyService.update({
+			rno : 22,
+			bno : bnoValue,
+			reply : "Modified Reply......"
+		}, function(result){
+			alert("수정 완료!");
+		});
+		*/
 	});
-	*/
-	
-	// 댓글 수정 테스트
-	/*
-	replyService.update({
-		rno : 22,
-		bno : bnoValue,
-		reply : "Modified Reply......"
-	}, function(result){
-		alert("수정 완료!");
-	});
-	*/
 </script>
 
-<!-- 댓글 상세조회에서 수정버튼과 목록 돌아가기 기능 -->
+<!-- 게시글 상세조회에서 수정버튼과 목록 돌아가기 기능 -->
 <script type="text/javascript">
 	$(document).ready(function(){
 		var operForm = $("#operForm");
