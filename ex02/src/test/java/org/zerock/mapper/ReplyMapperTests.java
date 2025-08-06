@@ -69,13 +69,23 @@ public class ReplyMapperTests {
 		
 		log.info("UPDATE COUNT : " + count);
 	}
-	*/
 	
 	@Test
 	public void tesetList() {
 		Criteria cri = new Criteria();
 		
 		List<ReplyVO> replies = mapper.getListWithPaging(cri, bnoArr[0]);
+		
+		replies.forEach(reply -> log.info(reply));
+	}
+	
+	*/
+	
+	@Test
+	public void tesetList2() {
+		Criteria cri = new Criteria(2, 10);
+		
+		List<ReplyVO> replies = mapper.getListWithPaging(cri, 393349L);
 		
 		replies.forEach(reply -> log.info(reply));
 	}
