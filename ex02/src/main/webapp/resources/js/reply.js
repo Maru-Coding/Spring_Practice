@@ -32,7 +32,11 @@ var replyService = (function(){
 		$.getJSON("/replies/pages/" + bno + "/" + page + ".json",
 			function(data){
 				if (callback) {
-					callback(data);
+					// 댓글 목록 모두 가져오기
+					// callback(data);
+					
+					// 댓글 숫자와 목록을 가져오는 경우
+					callback(data.replyCnt, data.list);
 				}
 			}).fail(function(xhr, status, err) {
 				if (error) {
@@ -95,27 +99,30 @@ var replyService = (function(){
 	}
 	
 	// 시간 처리 (JSON 데이터의 숫자형태를 시간형태로 변환)
-	function displayTime(timeValue){
-		var today = new Date();
-		var gap = today.getTime() - timeValue;
-		
-		var dateObj = new Date(timeValue);
-		var str = "";
-		
-		if (gap < (1000 * 60 * 60 * 24)) {
-			var hh = dateObj.getHours();
-			var mi = dateObj.getMinutes();
-			var ss = dateObj.getSeconds();
-			
-			return [ (hh > 9 ? '' : '0') + hh, ':', (mi > 9 ? '' : '0') + mi,
-				':', (ss > 9 ? '' : '0') + ss ].join('');
+	function displayTime(timeValue) {
+		const today = new Date();
+		const dateObj = new Date(timeValue);
+		const gap = today.getTime() - timeValue;
+	
+		const yy = dateObj.getFullYear();
+		const mm = dateObj.getMonth() + 1;
+		const dd = dateObj.getDate();
+	
+		const hh = dateObj.getHours();
+		const mi = dateObj.getMinutes();
+		const ss = dateObj.getSeconds();
+	
+		const twoDigits = (num) => (num > 9 ? '' : '0') + num;
+	
+		if (gap < 1000 * 60 * 60 * 24) {
+			// 하루 이내: 시간만 출력
+			return [twoDigits(hh), ':', twoDigits(mi), ':', twoDigits(ss)].join('');
 		} else {
-			var yy = dateObj.getFullYear();
-			var mm = dateObj.getMonth() + 1; // getMonth() is zero-based
-			var dd = dateObj.getDate();
-			
-			return [ yy, '/', (mm > 9 ? '' : '0') + mm, '/',
-				(dd > 9 ? '' : '0') + dd].join('');
+			// 하루 이상: 날짜 + 시간 출력
+			return [
+				yy, '/', twoDigits(mm), '/', twoDigits(dd), ' ',
+				twoDigits(hh), ':', twoDigits(mi), ':', twoDigits(ss)
+			].join('');
 		}
 	}
 			
